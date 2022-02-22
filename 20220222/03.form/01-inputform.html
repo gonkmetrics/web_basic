@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>inputform</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>input elements</h1>
+    <form>
+        <!--
+            fieldset tag -> put commands inside
+        -->
+        <fieldset>
+            <legend>user registration</legend>
+            <p>id: <input type="text"/></p>
+            <p>password: <input type="password"/></p>
+            <p>receieve emails from admin
+                <input type="radio" name="recieve">yes
+                <input type="radio" name="recieve">no
+                <!-- name denotes a pair or group of radio buttons. if they have
+                multiple names, then they can be independently selected-->
+            </p>
+            <p>식사여부: 
+                <input type="radio" name="meal">먹음
+                <input type="radio" name="meal">안먹음
+                <input type="radio" name="meal">먹는중
+            </p>
+            <p>coding now:
+                <input type="checkbox" name="study" />HTML
+                <input type="checkbox" name="study" />CSS
+                <input type="checkbox" name="study" />JS
+            </p>
+            <p>send:
+                <input type="submit" value="submit"/>
+                <input type="reset" value="reset"/>
+                <input type="button" value="ok, button"/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
