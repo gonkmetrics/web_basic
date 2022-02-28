@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 
+        clear and float
+        clear: left; - float, clear: right; -float, clear: both;
+        clear allows an element to not overlap with floating elements
+        */
+        * {
+            margin: 0; padding:0;
+        }
+
+        body {
+            font: 12px, Gulim;
+            margin:20px;
+        }
+
+        #wrapper {
+            width:550px;
+        }
+
+        p {text-align: justify; }
+
+        .para1{
+            float: right;
+            width:250px
+        }
+
+        .para2{
+            float: left;
+            width:220px;
+        }
+
+        .para3{
+            clear:both;
+        }
+
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>clear</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="para1">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec gravida est at iaculis ullamcorper. 
+                Cras cursus non nibh quis lacinia. 
+                Vestibulum tincidunt id nibh quis posuere. 
+            </p>
+        </div>
+        <div class="para2">
+            <p>
+                Morbi sit amet dui in eros congue faucibus sed vitae purus. 
+                Fusce tempus lobortis risus eu accumsan. 
+                Pellentesque sagittis, ex id tempor dignissim, dui mi finibus orci,
+                eu dignissim nisi arcu ac tellus. 
+                Aliquam ut augue sagittis, viverra leo nec, congue ligula.
+            </p>
+        </div>
+        <div class="para3">
+            <p>
+                Vestibulum porttitor nec augue in suscipit.
+                Ut nec arcu in felis volutpat tristique. Nunc tincidunt ex ac tempus varius.
+                Sed eu velit lacus. Nam scelerisque velit ac risus consequat maximus. 
+                Nulla porttitor tempor lacinia. Aenean sed molestie lorem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

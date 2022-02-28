@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            margin:0px; padding:0px;
+        }
+        /*
+        virtual clear methods:
+
+            1. create a virtual element with thee :after suffix to create a virtual table
+
+            2. create an empty html tag. for its css attributes add clear:both
+
+            3. in the container element, define height
+        */
+        body{
+            font:12px;
+            margin:20px;
+        }
+        #container{
+            width:600px;
+            padding:10px;
+            background:salmon;
+            border:5px solid brown;
+        }
+        h1{text-align: center; padding:10px;}
+        p{text-align: justify;}
+
+        .coffee{
+            float:left;
+            background: navajowhite;
+            width:250px;
+            margin:10px;
+        }
+
+        .green{
+            float:right;
+            background: lightgreen;
+            width:250px;
+            margin:10px;
+        }
+
+        #container:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        #container{
+            height:165px;
+        }
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>virtboth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Lorem Ipsum</h1>
+        <div class="green">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec gravida est at iaculis ullamcorper. 
+            </p>
+        </div>
+        <div class="coffee">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec gravida est at iaculis ullamcorper. 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

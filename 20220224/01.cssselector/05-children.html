@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* selecting children from parent tag
+        is done with > 
+        
+        body tag is parent, <p> and all other inner tags are children tags
+            
+        even if a child tag is covered by a type tag, the child->parent tag takes
+        precedence. this should be done in order of general->specific, rather than the
+        child>parent tag being first
+        
+        supports up to two nestings
+        a>b>c
+        
+        note that the li tags are 2 parent trees
+        
+        */
+            p{color:violet;}
+
+            ul > li > p{color:green;}
+
+
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>children</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>destinations</h1>
+    <ul>
+        <li><p>feb: busan</p></li>
+        <li><p>mar: jeju</p></li>
+    </ul>
+    <p>apr: ulleongdo</p>
+</body>
+</html>

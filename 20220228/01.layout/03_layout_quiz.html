@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {width: fit-content;}
+        .header {
+            background-color: rgb(207, 207, 207);
+            padding: 15px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .intro{
+            text-align: center;
+        }
+
+        p:not(.intro){
+        font-size: 0.8em;
+        text-align: justify;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            float:left;
+            width:20%;
+            padding-inline: 10px;
+        }
+
+        h1:not(.header){
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .tulip>h1{
+            background-color: lightcoral;
+        }
+
+        .jebi>h1{
+            background-color: lightblue;
+        }
+
+        .pumpkin>h1{
+            background-color: lightsalmon;
+        }
+
+        .sunflower>h1{
+            background-color: lightgreen;
+        }
+
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1 class="header">나의 아름다운 정원</h1>
+    <div id="wrapper">
+        <p class="intro">사람들 아마 자신에게 자신감을 북돋위 주는 표정 있는 꽃들을 선호할 것이다.</p>
+        <ul class="gallery">
+            <li class="tulip">
+                <h1>튜울립</h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec gravida est at iaculis ullamcorper. 
+                </p>
+            </li>
+            <li class="jebi">
+                <h1>제비꽃</h1>
+                <p>
+                    Morbi sit amet dui in eros congue faucibus sed vitae purus. 
+                    Fusce tempus lobortis risus eu accumsan. 
+                </p>
+            </li>
+            <li class="pumpkin">           
+                <h1>호박꽃</h1>
+                <p>
+                    Vestibulum porttitor nec augue in suscipit.
+                    Ut nec arcu in felis volutpat tristique. 
+                </p></li>
+            <li class="sunflower">
+                <h1>해바라기</h1>
+                <p>
+                    Vestibulum porttitor nec augue in suscipit.
+                    Ut nec arcu in felis volutpat tristique. 
+                </p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
