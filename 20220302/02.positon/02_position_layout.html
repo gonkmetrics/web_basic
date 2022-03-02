@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+
+        #footer{
+            position: relative;
+            bottom: 0px;
+            border: 1px solid green;
+        }
+
+        #header{
+            border: 1px solid green;
+        }
+
+        #container{
+            border: 1px solid purple;
+        }
+
+        .sidebar{
+            border: 1px solid orange;
+            position: absolute;
+            left: 207px;
+            width: 300px;
+            height: 322px;
+        }
+
+        .content{
+            border: 1px solid green;
+            position: relative;
+            right: 0px;
+            width: 194px;
+            height: 322px;
+        }
+
+
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ayout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="header">
+        <h1>헤더</h1>
+    </div>
+    <div id="container">
+        <div class="sidebar">
+            <p>사이드바</p>
+        </div>
+        <div class="content">
+            <p>콘텐츠</p>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>푸터</h1>
+    </div>
+</body>
+</html>

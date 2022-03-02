@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*
+        position:static (also default)
+        position:relative the element is positioned relative to its normal position
+        position:fixed 
+        position:absolute the element marked as absolute inherits its origin point from 
+                its parent. a positioned parent uses the relative tag
+
+
+                below: for the class myred, the 0,0 position is the corner of the id box.
+                any other element will be positioned around this
+        
+        z-index defines the layer on which the element is
+        */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-size:14px;
+            margin:20px;
+            background:url(bg_grid.png);
+        }
+
+        .myred{
+            background: red;
+            position:absolute;
+            top:100px;
+            left:150px;
+            z-index: 1;
+            
+        }
+        .myblue{
+            background: blue;
+            position:absolute;
+            top:50px;
+            left:100px;
+            z-index: 2;
+        }
+        .mygreen{
+            background: green;
+            position:absolute;
+            left:50px;
+            z-index: 3;
+        }
+
+        p{
+            width:130px;
+            height:80px;
+            padding:10px;
+            color:white;
+            font-weight:bold;
+        }
+
+        #box{
+            position:relative;
+            width:550px;
+            border: 1px solid royalblue;
+        }
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>position</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="box">
+        <p class="myred">
+            박스의 크기와 위치를 잘 살펴봐야합니다
+        </p>
+        <p class="myblue">
+            박스의 포지션 속성을 바꿔가며 테스트합니다
+        </p>
+        <p class="mygreen">
+            포지션 이해하기 위해서는 많은 테스트가 필요합니다
+        </p>
+    </div>
+</body>
+</html>

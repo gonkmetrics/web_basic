@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{width: 600px; margin: 0; padding: 0;}
+        #header{border: 2px dotted red;}
+        #body{border: 2px solid blue; display: inline-block; height:fit-content;}
+        .contentLeft{
+            border: 2px solid gray; width: 25%; height: 300px;
+            float: right; overflow: auto;}
+        .contentRight{
+            border: 2px solid gray; width: 48%; height: 300px;
+            float: left;}
+        .contentRight>p{overflow-wrap: break-word; width:fit-content;}
+        .contentCenter{
+            border: 2px solid gray; width: 25%; height: 300px;
+            float: left; overflow: hidden;}
+        #footer{border: 2px dashed green; height: 100px; clear:both; margin-top: -4px;}
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>double</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Lorem ipsum
+        </h1>
+        <br>
+        <p>Consectetur adipiscing elit.</p>
+    </div>
+    <div id="body">
+        <div class="contentLeft">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris nec ante ut ligula faucibus tincidunt.
+                Nulla ut elit ac ex egestas eleifend.
+                Maecenas sit amet est sit amet magna eleifend porta.
+                Curabitur at justo eleifend, malesuada sem et, tempus dolor.
+            </p>
+        </div>
+        <div class="contentCenter">
+            <p>
+                Suspendisse scelerisque arcu eu est facilisis volutpat.
+                Nullam luctus odio hendrerit sem consectetur sodales.
+                Aliquam et risus viverra, commodo nisl ac, condimentum dolor.
+                Curabitur tristique sapien non elit scelerisque accumsan.
+                Maecenas eu tortor sit amet leo scelerisque porta vel eget velit.
+            </p>
+        </div>        
+        <div class="contentRight">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris nec ante ut ligula faucibus tincidunt.
+                Nulla ut elit ac ex egestas eleifend.
+                Maecenas sit amet est sit amet magna eleifend porta.
+                Curabitur at justo eleifend, malesuada sem et, tempus dolor.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            Praesent non tortor ut metus dignissim pretium.
+            Integer congue velit ac metus finibus ultricies.
+            Nam pretium orci sit amet enim malesuada sagittis.
+            Aenean egestas lacus eget tellus pulvinar rutrum.
+            Pellentesque laoreet ipsum sed felis pellentesque dignissim.
+        </p>
+    </div>
+</body>
+</html>
