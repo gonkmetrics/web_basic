@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //functions are similar to java methods
+        /*
+        function greet1(name){
+            alert(name + "님 안녕하세요");
+        }
+
+        greet1("유도영");
+
+        function greet2(){
+            alert("안녕안녕안녕안녕");
+        }
+        */
+        function greet3(){
+            var min = new Date().getMinutes();
+            var hour = new Date().getHours();
+            alert(hour+":"+min+"에 제출이 완료되었습니다.");
+        }
+
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <button onclick="greet3();">제출</button>
+</body>
+</html>

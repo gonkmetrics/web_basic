@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //using the new keyword you can create classes and objects
+        //and can import then, like java.util classes
+        //examples include document, Date, Array, Math classes
+
+        document.write("time:" + "<br>");
+
+        var today = new Date();
+        var nowYear = today.getFullYear();
+        var nowMonth = today.getMonth() + 1;
+        var nowDate = today.getDate();
+        var nowDay = today.getDay();
+        var nowHours = today.getHours();
+        var nowMinutes = today.getMinutes();
+        var nowSeconds = today.getSeconds();
+        var nowTime = today.getTime();
+
+        document.write(today + "<br>");
+        document.write(nowYear + "<br>");
+        document.write(nowMonth + "<br>");
+        document.write(nowDate + "<br>");
+        document.write(nowDay + "<br>");
+        document.write(nowHours + "<br>");
+        document.write(nowMinutes + "<br>");
+        document.write(nowSeconds + "<br>");
+        document.write(nowTime + "<br>"); //unix time
+
+
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+</html>

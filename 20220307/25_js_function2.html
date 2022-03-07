@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var num = 1;
+        function nextPic(){
+            if(num === 3){
+                num = 0;
+            }
+            num++;
+            document.getElementById("pic").src = "img/cat" + num + ".jpg";
+            return false;
+            
+        }
+
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>이미지 넘기기</h1>
+
+    <img width="500px" src="img/cat1.jpg" id="pic">
+
+    <br><a href="#" onclick="return nextPic()">&gt;&gt;</a>
+    <br><a href="#" onclick="return prevPic()">&lt;&lt;</a>
+    <script>
+        //note how the redirect to # does not occur when return is specified for the function
+        function prevPic(){
+            num--;
+            if(num === 0){
+                num = 3;
+            }
+            document.getElementById("pic").src = "img/cat" + num + ".jpg";
+            return false; 
+        }
+
+        //console.log(document.getElementById("pic").src)
+        //gets filename
+    </script>
+</body>
+</html>

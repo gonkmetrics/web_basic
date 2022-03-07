@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //js events
+
+        //onload = execute when page loads
+        //onunload = execute when page unloads
+        //onclick = execute when element is clicked
+        //onkeypress = execute when keyboard button pressed
+        //onkeydown = execute when down key is pressed
+        //onkeyup = execute when down key is pressed
+        //onmouseover = execute when mouseover'ed
+        //onfocus = execute when tab is in focus
+        //onblur = execute when tab is out of focus
+        //onsubmit = execute when submit button pressed
+        //onreset = execute when reset button pressed
+        //onchange = execute when value changes
+        //onmousemove = execute when mouse moves
+        //onresize = execute when browser window is resized
+        //onerror = execute when error occurs
+        //onabort = execute when loading is aborted?
+
+        //var h1Tag = document.getElementsByClassName("noData");
+        //console.log(h1Tag[0]);
+        //as code is executed in order, the event does not occur even if the conditions exist
+
+        //therefore
+        window.onload = function(){
+            var h1Tag = document.getElementsByClassName("noData");
+            console.log(h1Tag[0].className);
+        }
+        //now, the event is executed once the page is loaded together with the h1 tag below. 
+        //in this state, the event occurs
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1 class="noData">test</h1>
+    
+</body>
+</html>

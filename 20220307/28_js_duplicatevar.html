@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var i = 10;
+        var num = 20;
+
+        function theTest(){
+            var num = i + 200;
+            alert(num);
+        }
+        theTest();
+
+        function theFnc(){
+            document.write(num);
+        }
+        theFnc();
+        //note that the duplicate var num that equals 210 only exists inside the stack for 
+        //theTest. executing another function that uses the global var num uses the global value, not the "latest value"
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+</html>

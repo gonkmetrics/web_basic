@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // JS has several built in functions
+        // eval() turns string literal to JS code
+        // parseInt() parses string for numbers, turns into int
+        // parseFloat() parses string for numbers, turns into float
+        // isNaN() if data is not a number, condition is true
+        // isFinite() if the number is not infinite, condition is true
+        // Number() string to number
+        // String() number to string
+        // escape() string to ascii
+        // unescape() reverse of escape()
+
+        var result1 = eval("10 + 20;"); //most often can be used to parse strings received from prompts
+        var num = 100;
+        document.write("num"+10+"<br>"); 
+        document.write(eval("num")+10+"<br>");
+
+        var infiniteValue = 1/0;
+        document.write(infiniteValue+"<br");
+        var result2 = isFinite(infiniteValue);
+        console.log(result2);
+
+        var result3 = isNaN(1/"a");
+        document.write(1/"a" + "<br>")
+        document.write(result3 + "<br>");
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+</html>

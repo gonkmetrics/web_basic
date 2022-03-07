@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        /*
+        function func(a,b,c){
+            this.var1 = a;
+            this.var2 = b;
+            this.var3 = c;
+
+            this.1 = function(){
+                code...
+            }
+        }
+        */
+
+        function computer(cpuInfo, ramInfo, ssdInfo){
+            this.cpu = cpuInfo;
+            this.ram = ramInfo;
+            this.ssd = ssdInfo;
+
+            this.totInfo = function(){
+                document.write("manufactured by: amd");
+                document.write("64bit");
+                
+            }
+        }
+
+        var myCom = new computer("amd","32gb","1tb"); //these data values are sent to heap along with totInfo function
+        document.write(myCom.cpu + "<br>");
+        document.write(myCom.ram + "<br>");
+        document.write(myCom.ssd + "<br>");
+        myCom.totInfo();
+
+        var myCom2 = new computer("AMD", "16GB", "2TB");
+        document.write(myCom.cpu + "<br>"+ myCom.ram + "<br>" + myCom.ssd + "<br>");
+        myCom.totInfo();
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+</html>
