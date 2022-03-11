@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //creating elements inside dom
+        //using onclick function as well
+        //when click is registered, creates dom element
+        //can be fully realized in html
+
+        //first setup onload
+
+        window.onload = function(){
+            var number = document.getElementById("number");
+            var increase = document.getElementById("increase");
+            var decrease = document.getElementById("decrease");
+            console.log(number);
+
+
+            var div1 = document.getElementsByTagName("div");
+            console.log(div1[0]);
+
+            //console.log(increase.parentNode.parentNode); //selects body
+
+            var div2 = div1[0].childNodes;
+            console.log(div2[1]);
+
+            var div3 = div1[0].children;
+            console.log(div3);
+
+            console.log(div1[0].firstChild);
+            console.log(div1[0].lastChild);
+
+            console.log(div2[1].previousSibling);
+            console.log(div1[0].nextSibling);
+            var resetBtn = document.getElementById("reset");
+            console.log(resetBtn.nextElementSibling);
+
+            increase.onclick = function(){
+                console.log("increase click");
+                console.log(reset.innerText);
+                var currentNum = parseInt(number.innerText, 10);
+                //number.innerText = 100;
+                number.innerText = currentNum + 1;
+                //number.innerHTML = 
+            }
+
+            increase.onclick = function(){
+                console.log("increase click");
+                var currentNum = parseInt(number.innerText, 10);
+                number.innerText = currentNum + 1;
+            }
+
+            decrease.onclick = function(){
+                console.log("decrease click");
+                var currentNum = parseInt(number.innerText, 10);
+                number.innerText = currentNum - 1;
+            }
+
+            reset.onclick = function(){
+                alert("clicked 0");
+                number.innerText = 0;
+            }
+
+            var red=document.getElementById("red");
+
+            red.onclick = function(){
+                number.style.color = "red";
+            }
+
+            blue.onclick = function(){
+                number.style.color = "blue";
+            }
+
+            black.onclick = function(){
+                number.style.color = "black";
+            }
+
+
+        }
+
+        
+
+
+
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2 id="number">0</h2>
+    <div>
+        <button id="increase">+1</button>
+        <button id="reset">0</button>
+        <button id="decrease">-1</button>
+        <hr/>
+        <button id="red">red</button>
+        <button id="blue">blue</button>
+        <button id="black">black</button>
+    </div>
+</body>
+</html>

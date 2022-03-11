@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //to insert or replace text with js
+        //or to just create elements with js
+
+        //1. createElement to create a specified element
+        //2. insert contents into said element
+        //3. using DOM, place with appendChild
+
+        window.onload = function(){
+            var newPTag = document.createElement("p");
+            
+            var newBtn1 = document.createElement("button");
+            var newBtn2 = document.createElement("button");
+            
+            var text1 = document.createTextNode("button1");
+            var text2 = document.createTextNode("button2");
+
+            //the above elements have not been placed
+
+            
+
+            newBtn1.setAttribute("id", "btn1"); //sets id="btn1"
+            newBtn2.setAttribute("id", "btn2"); //sets id="btn2"
+
+            newPTag.appendChild(newBtn1);//newBtn elements are appended as children
+            newPTag.appendChild(newBtn2);//of the element <p>
+            
+            var body = document.getElementsByTagName("body");
+            console.log(body);
+
+            body[0].appendChild(newPTag);
+            newBtn1.appendChild(text1);
+            newBtn2.appendChild(text2);
+        }
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>title</h1>
+</body>
+</html>
+

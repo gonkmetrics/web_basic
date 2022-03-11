@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.onload = function(){
+
+            function changeTag() {
+                h1tag.setAttribute("class", "h1tag");
+                h1tag.style.color = "blue";
+            }
+  
+            createh1.onclick = function createTag(){
+                var h1tag = document.createElement("h1");
+                var text1 = document.createTextNode("h1 tag");
+                var hr = document.createElement("hr");
+                h1tag.appendChild(text1);
+                h1tag.appendChild(hr);
+                h1space.appendChild(h1tag);
+                changeTag();
+            }
+
+
+            
+            
+            
+
+            
+        }
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="h1space">
+
+    </div>
+    <button id="createh1">create h1</button>
+</body>
+</html>

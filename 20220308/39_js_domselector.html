@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //target.getElementById("idname");
+
+        window.onload = function(){
+            
+            //var myObj = document.getElementById("title");
+            //console.log(myObj);
+            //parses the first id="title", does not apply further
+
+           // myObj.style.color = "blue";
+
+            var myList = document.getElementsByTagName("ul");
+            //console.log(myList);
+            //console.log(myList);
+            //and so on as ul increase
+
+            //can also select myList[0].getElementsByTagName("li");
+            var myLi = myList[0].getElementsByTagName("li");
+            var myLi2 = myList[1].getElementsByTagName("li");
+            //console.log(myLi);
+
+            //for(var count = 0; count <= myList.length; count++){
+            //    myLi[count].style.border = "thin dotted red";
+            //}
+
+            //console.log(myList[1]);
+            //selects child node at index 2
+            //console.log(myList[1].childNodes[2]);
+            //selects all child nodes
+            //console.log(myList[1].children);
+            //selects first child, only type
+            //console.log(myList[1].firstChild);
+
+            var childLi = myList[1].children;
+            console.log(childLi[1]);
+            console.log(myLi2.length);
+
+            //console.log(childLi.parentNode);
+            //console.log(childLi.nextSibling);
+
+            for(var count = 0; count <= myLi2.length; count++){
+                if(count % 2 === 0){
+                    childLi[count].style.color = "green";
+                }else if(count % 2 === 1){
+                    childLi[count].style.color = "yellow";
+                }
+            }
+
+            
+
+        }
+
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <h1>selector</h1>
+        <h2 id="title">selectors</h2>
+        <ul>
+            <li>getElementById</li>
+            <li>getElementByTagName</li>
+        </ul>
+        <h2>proximity selectors</h2>
+        <ul id="list">
+            <li>parentNode</li>
+            <li>childNode</li>
+            <li>children</li>
+            <li>firstChild</li>
+            <li>previousSibling</li>
+            <li>nextSibling</li>
+        </ul>
+
+    </div>
+</body>
+</html>

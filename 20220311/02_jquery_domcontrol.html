@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        //more selectors
+
+        /*
+        $("ul li:odd") selects odd 
+        $("ul li:even") selects even
+        $("ul li:first") selects first node
+        
+        $("ul li:last") selects last node
+        $("ul li:eq(1)") selects node at index 1 (2nd node)
+        $("ul li").eq(1) same as above
+        $("ul li:lt(2)") selects all nodes before index 2
+        $("ul li:gt(2)") selects all nodes after index 2
+        $("ul li:nth-child(2n)") selects multiples of 2n (2, 4, 8, etc)
+        $("ul li:contains('string')") selects nodes that contain string
+        $("ul li:has('span')") selects nodes with tag element span
+        $("ul li").filter(".obj") selects nodes with class .obj
+        $("ul li").find("a") selects nodes with value "a"
+        $("ul li:.visible") selects nodes that are visible
+        $("ul li:.hidden") selects nodes that are hidden
+        $("h1, h2") selects nodes h1 and h2
+        $("ul li").not(:empty) selects nodes that are not empty
+        */
+
+    </script>
+    <script>
+        $(function(){
+           $("#list1 li:odd").css("background-color", "yellow");
+           $("#list1 li:even").css("background-color", "gray");
+           $("#list1 li:first").css("color", "red");
+           $("#list1 li:last").css("color", "green");
+           $("#list1 li:eq(1)").css("font-style", "italic");
+           $("#list1 li:lt(3)").css({"border":"aqua dotted 2px"});
+
+
+       })
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>탐색 선택자 및 HTML조작</h1>
+        <h2>탐색 선택자</h2>
+        <ul id="list1">
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+        </ul>
+        <ul id="list2">
+            <li>리스트8</li>
+            <li class="theObj">리스트9</li>
+            <li><span>리스트10</span></li>
+            <li>리스트11</li>
+            <li><a href="#">리스트12</a></li>
+            <li>리스트13</li>
+            <li>리스트14</li>
+        </ul>
+        <h2 class="theTitle">HTML조작</h2>
+        <ul id="list3">
+            <li class="obj1">list_2</li>
+            <li>list_2</li>
+            <li>list_3</li>
+            <li>list_4</li>
+            <li>list_5</li>
+        </ul>
+    </div>
+</body>
+</html>
